@@ -30,7 +30,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - echo dckr_pat_5IyhSP4dCDWcSgU9hYDp1Z3Et9o | docker login --username alnafidocker --password-stdin
+      - echo dckr_pat_5IyhSP4dCDWcSgU9hYDp1Z3Et9o | docker login --username mohammadarifsunasara --password-stdin
       - docker build -t cicd-integrate-clair_and_ecr . 
       - docker tag cicd-integrate-clair_and_ecr:latest 587027614473.dkr.ecr.us-east-1.amazonaws.com/cicd-integrate-clair_and_ecr:latest
 
